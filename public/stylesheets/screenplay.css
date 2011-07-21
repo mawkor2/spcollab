@@ -1,0 +1,117 @@
+#editframe { width:700px; height:400px; }
+.toolbar {  width:702px;  
+	background-color: #e8e8e8; 
+	border: outset 1px; 
+	font-family: sans-serif; 
+	cursor: arrow;
+}
+#editDoc {
+width: 702px;
+height: 702px;
+}
+.toolbar span { padding: 4px; }
+.enabled { color: black; }
+.disabled { color: gray; }
+.active { background-color: cyan; }
+
+html * {
+  outline: 0;
+}
+body {
+  text-align: left;
+  font-family: "Courier New", monospace;
+  font-size: 12pt;
+  line-height: 12pt;
+}
+
+/* screenplay based commands */
+.sceneHeading {
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12pt;
+  background-color: silver;
+  display: block;
+}
+.action {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 12pt;
+  display: block;
+}
+
+.character {
+  margin-top: 1em;
+  margin-bottom: 0;
+  margin-left: 270px;
+  text-transform: uppercase;
+  font-weight: normal;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.parenthetical {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 220px;
+  margin-right: 230px;
+  font-family: "Courier New", monospace;
+  font-size: 12pt;
+  line-height: 12pt;
+  font-weight: normal;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+}
+.dialogue {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 150px;
+  margin-right: 110px;
+  font-weight: normal;
+  font-size: 12pt;
+  display: block;
+}
+.transition {
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12pt;
+  display: block;
+}
+.shot {
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12pt;
+  display: block;
+}
+.act {
+  margin-top: 4em;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12pt;
+  display: block;
+}
+div#toolbar ul li#italicButton, div#toolbar ul li#boldButton {
+  margin: 2px;
+  background-color: white;
+  border: 1px solid #999;
+  cursor: pointer;
+  height: 15px;
+  padding: 3px 3px;
+}

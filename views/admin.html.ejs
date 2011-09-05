@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Social Screenplay Admin</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="distribution" content="all" />
+    <meta name="robots" content="all" />
+    <meta name="resource-type" content="document" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <script src="/javascripts/json2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script> 
+    <script type="text/javascript" src="/javascripts/admin.js"></script>
+    <link rel="stylesheet" href="/stylesheets/initial.css" type="text/css" />
+    <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" />
+  </head>
+  <body>
+    <div id="bg_top"></div>
+    <div id="bg_bottom"></div>
+    <div id="container">
+      <div id="header">
+        <div id="logo">THE SOCIAL SCREENPLAY</div>
+        <span id="written_by">admin console.</span>
+        <img src="/images/film_reel.png" class="quill">
+        <ul id="status">
+          <%- userHtml %>
+        </ul>
+        <%- countdown %>
+      </div>
+      <!-- /header -->
+        
+      <div id="content">
+        <iframe scrolling="no" width="651" border="0" height="871" id="snapshot_frame" src="/snapshot/"></iframe>
+      </div>
+      <ul id="pick_snapshot">
+        <%- snapshot_links %>
+      </ul>
+      <button id="revert" style="display: block">Revert to this version</button>
+      <input type="text" name="countdown_days" style="float: left;width: 30px;
+height: 20px;" id="countdown_days" style="color: white;"></input><span style="font-size: 13px;color: white;">days for countdown</span>
+      <button id="set_countdown">Set Countdown</button><br>
+      <button id="snapshot">Take a snapshot</button>
+      <br>
+      <button id="btn_genre">set genre</button><input type="text" id="input_genre"></input><br>
+      <button id="btn_script_length">set script length</button><input type="text" id="input_script_length"></input><br>
+    </div>
+    <div id="footer">
+      <div id="footer_content">
+        <div id="footer_content_left">
+          <h3>The Rules:</h3>
+          <ol>
+            <li>Add or edit as much or as little as you want.</li>
+            <li>Stay within the established genre and length.</li>
+            <li>Don't include existing characters or scenarios.</li>
+            <li>Focus on collaboration and creativity (in other words, don't try to dominate!)</li> 
+          </ol>
+        </div>
+        <div id="footer_content_right">
+          <a href="mailto:socialscreenplay@yahoo.com">Contact Us</a>
+          <a href="http://thesocialscreenplay.vanillaforums.com/" target="_blank">Discuss</a>
+          <a href="http://www.facebook.com/pages/The-Social-Screenplay-Project/259542564063300" target="_blank">Social Screenplay on Facebook</a>
+          <a class="bottom_link" href="http://twitter.com/#!/socialscrnplay" target="_blank">Social Screenplay on Twitter</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      <%- userData %>
+    </script>
+    <script>
+      <%- countdownData %>
+    </script>
+<div id="fb-root"></div>
+<div id="login_dialog" style="display: none;">
+  <h3>Build the Social Screenplay!</h3>
+  <div class="login_buttons">
+    <img class="fb_button" src="/images/facebook_login_button.png">
+    <img class="tw_button" src="/images/twitter_login_button.png">
+    <img class="em_button" src="/images/email_login_button.png">
+  </div>
+  <label for="tac" id="terms">
+    <div id="terms_understand">I have read and understand the Terms and Conditions</div><input type="checkbox" id="tac" name="tac"></input>
+    <div class="toc" style="background-color: white; color: black; font-family: verdana;">
+<h4>THE SOCIAL SCREENPLAY</h4>
+<h5>USER GENERATED CONTENT SUBMISSION RELEASE and TERMS & CONDITIONS</h5>
+<p>Contributions to The Social Screenplay (the “Project”) are considered  user generated content, which shall mean and refer to any content, media, or materials, regardless of the tangible format, medium, or form, including but not limited to electronic images, photographs, animated or motion pictures, caricatures, likenesses, vocal or other sounds, video or audio recordings, text, artwork, logos, graphics or visual effects, and to all derivative works, translations, adaptations or variations of same, as well as any accompanying correspondence, packaging, or other materials (collectively, the “Content”) to the Project under the terms and conditions contained herein (“Release.”) Submitter acknowledges that he/she has received adequate consideration for his/her agreement hereunder, most notably the potential publicity, educational and promotional value to Submitter by contributing to the Project.</p>
+<ol>
+<li>The Submitter grants individuals or entities D/B/A The Social Screenplay, a registered California D/B/A,  a perpetual, worldwide, irrevocable, non-exclusive, assignable, transferable, unqualified, unrestricted, unconditional, unlimited, royalty-free, license for the use and exploitation of the Content in any manner, including but not limited to the right to, publish, produce, perform, display, scan, edit, crop, merge, resize, view, broadcast, distribute, reproduce, modify, translate create derivative works and/or duplicate of any part of the Content, to incorporate it in other works, in any form, media or technology now known or later developed, and to index, store or categorize the Content by The Social Screenplay or its affiliated or successor entities, or their respective advertising agencies, third party suppliers or service providers, participating advertisers, sponsors and promotional partners, or the officers, directors, shareholders, employees, agents or representatives of each (collectively, the “Released Parties”) for operational, advertising and/or publicity purposes relating to the Project or any of their affiliated entities, or for any other lawful purpose, in any media now known or hereinafter invented without any financial or other compensation. Under no circumstances will the Released Parties be held liable or responsible to Submitter for the subject matter or content of the Content or for the authorized or unauthorized use, editing, viewing, broadcast, publication, distribution, manipulation, and/or duplication of the Content.</li> 
+<li>Submitter represents and warrants the following:</li>
+<ol style="list-style-type:lower-alpha"> 
+<li>Submission of the Content does not violate any agreement or understanding in place with another party, including other organizations, and former or current employers, or their policies and procedures or the like that govern Submitter.</li>
+<li>The Content is Submitter’s own creation, and does not violate existing  trademarks, copyrights, digital rights and publicity rights.  Submitter’s contributions to the Project are wholly original, and have not been previously trademarked, copyrighted or registered</li>
+<li>Submitter has not accepted or agreed to accept, or paid or agreed to pay, any money, service or other valuable consideration for the inclusion of any matter in the Content.</li></ol>
+<li>SUBMITTER AGREES THAT HE/SHE WILL NOT MAKE ANY CLAIM OR ACTION, OR ALLOW OR AUTHORIZE ANY THIRD PARTY TO MAKE ANY CLAIM OR ACTION ON BEHALF OF THE SUBMITTER, WITH RESPECT TO THE CONTENT AGAINST THE RELEASED PARTIES. SUBMITTER HEREBY RELEASES, DISCHARGES, HOLDS HARMLESS, AND INDEMNIFIES THE RELEASED PARTIES FROM ANY AND ALL LIABILITY FOR ANY DIRECT OR INDIRECT LOSSES, CLAIMS, DAMAGES, ACTIONS, DEMANDS, CAUSES OF ACTION, COSTS OR EXPENSES, INCLUDING REASONABLE ATTORNEYS’ FEES, NO MATTER HOW CAUSED, ARISING OUT OF OR OTHERWISE RELATING IN ANY WAY TO ANY BREACH OR ALLEGED BREACH BY SUBMITTER OF HIS/HER AFFIRMATION, UNDERTAKING, OR OBLIGATION OF THIS RELEASE, OR AS A RESULT OF THE BROADCAST, DISPLAY, DISSEMINATION, OR USE OF THE CONTENT FOR ANY PURPOSE, INCLUDING, BUT NOT LIMITED TO, ANY CLAIM OF COPYRIGHT INFRINGEMENT, INVASION OF PRIVACY OR RIGHT TO PUBLICITY, AND SUBMITTER ACKNOWLEDGES THAT NONE OF THE RELEASED PARTIES HAVE MADE ANY REPRESENTATION OR WARRANTY TO HIM/HER REGARDING THE CONTENT.</li>
+<li>Submitter understands that submission of the Content does not obligate Released Parties to broadcast, display, publish or otherwise transmit, disseminate, promote or use the Content for any purpose and that Released Parties  make no claim that the Content is appropriate for any audience or purpose. Submitter further understands that the Content will not be returned.</li>
+<li>Submitter understands that Released Parties have the right to review or monitor any Content and to edit, delete, reject, remove or modify, without notice to Submitter.</li>
+<li>The Project is intended as an example of mass collaboration, and therefore Submitter agrees that if Content is selected for broadcast, production, display or dissemination, Submitter’s name or authorship will not be published, acknowledged or credited in any way. Submitter waives any right to arbitration over any credit that is assigned or not assigned.</li>
+<li>Submitter understands that this Release is intended to be as broad and inclusive as permitted by law, and Submitter agrees that if any portion of this Release is deemed invalid, the remainder will continue in full force and effect. Submitter further understands and agrees that this Release is to be interpreted under the laws of California or federal law, as applicable, and Submitter submits to the jurisdiction of the state and federal courts within California notwithstanding its conflict of laws provisions, and waives all objections to the jurisdiction or venue of such courts.</li></ol>
+<p>By contributing to The Social Screenplay, I, the Submitter, understand and consent to these conditions.</p>
+    </div>
+  </label>
+</div>
+<div id="login_fail_dialog" style="display: none;">
+  <h3>Log in to add or edit content.  It can be a word, a piece of dialog, or a whole scene if you'd like.  Or, just watch as it's being written.  But it's more fun to write, right?</h3>
+</div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script>
+  FB.init({
+    appId  : '173407836062611',
+    status : true, // check login status
+    cookie : true, // enable cookies to allow the server to access the session
+    xfbml  : true, // parse XFBML
+    channelURL : 'http://' + 'ec2-204-236-154-241.us-west-1.compute.amazonaws.com:8080' + '/html/channel.html', 
+    oauth  : true 
+  });
+</script>
+  </body>
+</html>

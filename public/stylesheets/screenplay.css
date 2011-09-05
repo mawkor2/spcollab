@@ -33,6 +33,7 @@ body {
   font-size: 12pt;
   background-color: silver;
   display: block;
+  min-height: 16px;
 }
 .action {
   margin-top: 1em;
@@ -40,24 +41,26 @@ body {
   font-weight: normal;
   font-size: 12pt;
   display: block;
+  min-height: 16px;
 }
 
 .character {
   margin-top: 1em;
   margin-bottom: 0;
-  margin-left: 270px;
+  padding-left: 270px;
   text-transform: uppercase;
   font-weight: normal;
   display: block;
   font-size: 15px;
   font-weight: bold;
+  min-height: 16px;
 }
 
 .parenthetical {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 220px;
-  margin-right: 230px;
+  padding-left: 220px;
+  padding-right: 230px;
   font-family: "Courier New", monospace;
   font-size: 12pt;
   line-height: 12pt;
@@ -70,15 +73,17 @@ body {
   display: block;
   font-family: monospace;
   white-space: pre;
+  min-height: 16px;
 }
 .dialogue {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 150px;
-  margin-right: 110px;
+  padding-left: 150px;
+  padding-right: 110px;
   font-weight: normal;
   font-size: 12pt;
   display: block;
+  min-height: 16px;
 }
 .transition {
   margin-top: 1em;
@@ -88,6 +93,7 @@ body {
   font-weight: normal;
   font-size: 12pt;
   display: block;
+  min-height: 16px;
 }
 .shot {
   margin-top: 1em;
@@ -96,6 +102,7 @@ body {
   font-weight: normal;
   font-size: 12pt;
   display: block;
+  min-height: 16px;
 }
 .act {
   margin-top: 4em;
@@ -106,6 +113,7 @@ body {
   font-weight: normal;
   font-size: 12pt;
   display: block;
+  min-height: 16px;
 }
 div#toolbar ul li#italicButton, div#toolbar ul li#boldButton {
   margin: 2px;

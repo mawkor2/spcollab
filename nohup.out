@@ -1,0 +1,44 @@
+   [36minfo  -[39m socket.io started
+[0;32mGET /home/brandon/spcollab/public/javascripts/json2.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/utils.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/editor.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/editlib.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/diff_match_patch_uncompressed.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/web_worker.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/prettify.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/jquery.timers.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/jquery.color.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/application.js[0m
+[0;32mGET /home/brandon/spcollab/public/stylesheets/initial.css[0m
+[0;32mGET /home/brandon/spcollab/public/stylesheets/screenplay.css[0m
+[0;32mGET /home/brandon/spcollab/public/stylesheets/application.css[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/screenplay_init.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/diff_worker.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/patch_worker.js[0m
+[0;32mGET /home/brandon/spcollab/public/images/chat_sound_icon.png[0m
+[0;32mGET /home/brandon/spcollab/public/images/add_contact_icon.png[0m
+[0;32mGET /home/brandon/spcollab/public/images/body_bk.png[0m
+[0;32mgesendet: {"channel": "initial", "id":1, "users":[[1]]}[0m
+[0;32mgesendet: {"channel": "join", "payload": {"user": 1}}[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/diff_match_patch_uncompressed.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/diff_match_patch_uncompressed.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/utils.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/json2.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/web_worker.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/diff_match_patch_uncompressed.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/editlib.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/editor.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/jquery.timers.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/prettify.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/jquery.color.js[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/application.js[0m
+[0;32mGET /home/brandon/spcollab/public/stylesheets/application.css[0m
+[0;32mGET /home/brandon/spcollab/public/stylesheets/screenplay.css[0m
+[0;32mGET /home/brandon/spcollab/public/stylesheets/initial.css[0m
+[0;32mGET /home/brandon/spcollab/public/images/add_contact_icon.png[0m
+[0;32mGET /home/brandon/spcollab/public/images/chat_sound_icon.png[0m
+[0;32mGET /home/brandon/spcollab/public/javascripts/screenplay_init.js[0m
+[0;32mGET /home/brandon/spcollab/public/images/body_bk.png[0m
+[0;32mgesendet: {"channel": "initial", "id":2, "users":[[1,2]]}[0m
+[0;32mgesendet: {"channel": "join", "payload": {"user": 2}}[0m
+sceneHeading
